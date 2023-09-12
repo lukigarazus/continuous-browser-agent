@@ -26,6 +26,7 @@ defmodule BrowserAgentGenServer do
       end
 
       def handle_call({command, args}, _from, state) do
+        IO.puts("Handle call with arguments")
         {result, state} = Kernel.apply(unquote(page_model), command, [args, state])
         {:reply, result, state}
       end

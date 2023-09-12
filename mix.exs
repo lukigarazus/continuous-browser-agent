@@ -1,9 +1,9 @@
-defmodule ElixirTry.MixProject do
+defmodule ContinuousBrowserAgent.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :elixir_try,
+      app: :continuous_browser_agent,
       version: "0.1.0",
       elixir: "~> 1.15-dev",
       start_permanent: Mix.env() == :prod,
@@ -14,6 +14,7 @@ defmodule ElixirTry.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      # mod: {ContinuousBrowserAgent, []},
       extra_applications: [:logger]
     ]
   end

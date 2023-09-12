@@ -1,8 +1,8 @@
-defmodule ElixirTryTest do
+defmodule ContinuousBrowserAgentTest do
   use ExUnit.Case
-  doctest ElixirTry
+  doctest ContinuousBrowserAgent
 
   test "greets the world" do
-    assert ElixirTry.hello() == :world
+    assert ContinuousBrowserAgent.hello() == :world
   end
 end
